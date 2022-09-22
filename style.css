@@ -13,6 +13,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	/* justify-content: center; */
 	align-items: center;
 }
 
@@ -20,18 +21,21 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 50%;
+	width: 40%;
 }
 #cardBorder {
 	position: relative;
 	left: 0;
 	top: 0;
-	width: 70%;
+	width: 60%;
+	/* width: 50%; */
 	background: #419fb1;
 	display: flex;
 
 	padding: 2rem 0 2rem 2rem;
+	/* padding: 2rem 2rem 2rem 2rem; */
 	border-radius: 2rem 0 0 2rem;
+	/* border-radius: 2rem 2rem 2rem 2rem; */
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -59,13 +63,13 @@ body {
 }
 
 #card {
-	/*   margin: 3em auto; */
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 	overflow: hidden;
 	border-radius: 2rem 0 0 2rem;
+	/* border-radius: 2rem 2rem 2rem 2rem; */
 	padding: 1rem;
 	background: white;
 }
