@@ -6,8 +6,6 @@
 	box-sizing: border-box;
 }
 body {
-	margin: 1em;
-
 	width: 100vw;
 	height: 100vh;
 	font-family: Google Sans, Noto, Roboto, Helvetica Neue, sans-serif;
