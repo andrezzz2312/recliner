@@ -15,8 +15,12 @@ body {
 	justify-content: space-between;
 	/* justify-content: center; */
 	align-items: center;
-}
 
+	overflow: hidden;
+}
+img {
+	width: 70%;
+}
 .imgContainer {
 	display: flex;
 	justify-content: center;
@@ -27,7 +31,7 @@ body {
 	position: relative;
 	left: 0;
 	top: 0;
-	width: 60%;
+	width: 100%;
 	/* width: 50%; */
 	background: #419fb1;
 	display: flex;
@@ -38,13 +42,15 @@ body {
 	/* border-radius: 2rem 2rem 2rem 2rem; */
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 }
-
+.der {
+	width: 70%;
+}
 #cardBorder::before {
 	content: '';
 	position: absolute;
 	left: 10%;
 	top: 0;
-	width: 600px;
+	width: 400px;
 	height: 50px;
 
 	transform: skew(20deg) rotate(70deg);
@@ -107,7 +113,7 @@ a {
 	color: #419fb1;
 }
 
-@media (max-width: 480px) {
+@media (orientation: portrait) {
 	body {
 		flex-direction: column;
 		justify-content: center;
@@ -115,6 +121,9 @@ a {
 		align-items: center;
 		width: 100%;
 		margin: 0;
+	}
+	.der {
+		width: 100%;
 	}
 	#cardBorder {
 		width: 100%;
@@ -149,6 +158,15 @@ a {
 		height: 70px;
 
 		transform: skew(140deg);
+	}
+}
+
+@media screen and (min-width: 30em) and (orientation: landscape) {
+	model-viewer {
+		width: 100%;
+		height: 10rem;
+		background-color: #ffffff;
+		--poster-color: #ffffff00;
 	}
 }
 
